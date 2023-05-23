@@ -1,10 +1,6 @@
+import Providers from '@/components/Providers';
 import '../globals.css'
-import { Sarabun } from 'next/font/google'
-
-const sarabun = Sarabun({
-  subsets: ['thai'],
-  weight: ['100', '200', '300', '400', '700'],
-})
+import { AppHeader } from './ui/AppHeader';
 
 export const metadata = {
   title: 'Home Page',
@@ -18,12 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sarabun.className}>
-        <h1>สวัสดี Header</h1>
-        <hr />
-        {children}
-        <hr />
-        <h1>Web Footer</h1>
+      <body>
+        <Providers>
+          <AppHeader />
+          {children}
+          
+        </Providers>
       </body>
     </html>
   );
