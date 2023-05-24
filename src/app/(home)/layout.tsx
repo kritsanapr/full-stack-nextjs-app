@@ -1,6 +1,7 @@
 import Providers from '@/components/Providers';
 import '../globals.css'
 import { AppHeader } from './ui/AppHeader';
+import { AppFooter } from './ui/AppFooter';
 
 export const metadata = {
   title: 'Home Page',
@@ -18,7 +19,7 @@ export default function RootLayout({
         <Providers>
           <AppHeader />
           {children}
-          
+          <AppFooter />
         </Providers>
       </body>
     </html>

@@ -161,7 +161,7 @@ export function AppHeader() {
 
   return (
     <Container size="lg">
-      <Box pb={120}>
+      <Box pb={3}>
         <Header height={60} px="md">
           <Group position="apart" sx={{ height: "100%" }}>
             <MantineLogo size={30} />
