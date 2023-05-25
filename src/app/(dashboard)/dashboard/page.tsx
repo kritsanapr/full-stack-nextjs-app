@@ -1,8 +1,8 @@
 
-export default function DashboardPage() {
+export default function DIndexPage() {
   return (
     <div>
-      <h1>Hello Page Dashboard</h1>
+      <h1>Dashboard Index Page 2</h1>
     </div>
   );
 }
