@@ -208,14 +208,19 @@ export function AppHeader() {
                 Home
               </Link>
               <Link
+                prefetch={false}
                 href="./about"
                 className={pathname == "/about" ? classes.active : classes.link}
               >
                 About Us
               </Link>
-              <a href="#" className={classes.link}>
-                Academy
-              </a>
+              <Link
+                prefetch={false}
+                href="./newstype"
+                className={pathname == "/newstype" ? classes.active : classes.link}
+              >
+                ประเภทข่าว
+              </Link>
             </Group>
 
             <Group className={classes.hiddenMobile}>
@@ -258,7 +263,11 @@ export function AppHeader() {
               </Center>
             </UnstyledButton>
             <Collapse in={linksOpened}>{links}</Collapse>
-            <Link href="./about" className={classes.link} onClick={toggleDrawer}>
+            <Link
+              href="./about"
+              className={classes.link}
+              onClick={toggleDrawer}
+            >
               About us
             </Link>
             <a href="#" className={classes.link}>
